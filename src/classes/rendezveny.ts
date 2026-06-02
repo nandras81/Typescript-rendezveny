@@ -1,3 +1,4 @@
+import { LogMetodusHivas } from "../decorators/logMetodusHivas";
 import rendezvenyTipus = require("../enums/rendezvenyTipus");
 import type rendezvenyIface = require("../interfaces/rendezvenyIface");
 import { Resztvevo } from "./resztvevo";
@@ -10,6 +11,7 @@ export class Rendezveny implements rendezvenyIface.RendezvenyIface{
         this.resztvevokLista = new Array();
     }
 
+    @LogMetodusHivas
     public addResztvevo(resztvevo: Resztvevo): void{
         this.resztvevokLista.push(resztvevo);
     }
