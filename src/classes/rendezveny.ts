@@ -24,5 +24,9 @@ export class Rendezveny implements rendezvenyIface.RendezvenyIface{
     public listResztvevo(): Resztvevo[]{
         return this.resztvevokLista;
     }
+
+    public resztvevokSzama(): number{
+        return this.resztvevokLista.length;
+    }
 }
 

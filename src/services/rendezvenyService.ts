@@ -34,4 +34,5 @@ export class RendezvenyService{
         return this.rendezvenyLista.filter(
             (rendezveny) => rendezveny.rendezvenyTipus===rendezvenyTipus);
     }
+
 }
